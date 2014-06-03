@@ -1,0 +1,25 @@
+{
+  "name": "wpo-monitor-client",
+  "version": "0.0.2",
+  "description": "js client for wpo-monitor",
+  "main": "monitor-client.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wpokit/monitor-client.git"
+  },
+  "keywords": [
+    "wpo"
+  ],
+  "author": "mdemo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wpokit/monitor-client/issues"
+  },
+  "homepage": "https://github.com/wpokit/monitor-client"
+}

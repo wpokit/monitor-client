@@ -2,8 +2,9 @@
  * Created by mdemo on 2014/5/30.
  */
 (function () {
-    var monitor = {},
-        VERSION = '0.0.1',
+    var monitor = {
+            version: '0.0.1'
+        },
         globalScope = typeof global !== 'undefined' ? global : this,
         hasModule = (typeof module !== 'undefined' && module.exports);
     monitor.startTime = Date.now();
@@ -14,6 +15,7 @@
         }
         this.timing[name] = {};
         this.timing[name].start = time || Date.now();
+        return this;
     };
     monitor.end = function (name, time) {
         if (!name) {
@@ -23,6 +25,7 @@
             this.timing[name] = {};
         }
         this.timing[name].end = time || Date.now();
+        return this;
     };
     monitor.get = function (name) {
         if (!name || !this.timing[name]) {

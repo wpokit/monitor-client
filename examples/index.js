@@ -5,5 +5,7 @@ var monitor = require('../monitor-client');
 console.log(monitor);
 monitor.start('aa');
 console.log(monitor.get('aa'));
-monitor.end('aa');
+monitor.end('aa').start('bb');
+monitor.end('bb');
+console.log(monitor.get('bb'));
 console.log(monitor.get('aa'));
