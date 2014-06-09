@@ -44,14 +44,8 @@
         module.exports = monitor;
     } else if (typeof define === "function" && define.amd) {
         define("monitor", function (require, exports, module) {
-            if (module.config && module.config() && module.config().noGlobal === true) {
-                // release the global variable
-                globalScope.monitor = oldGlobalMoment;
-            }
-
             return monitor;
         });
-        makeGlobal(true);
     } else {
         makeGlobal();
     }
